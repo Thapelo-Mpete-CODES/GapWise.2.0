@@ -1,86 +1,97 @@
-# GapWise
+# GapWise 2.0
 
-GapWise is an ASP.NET Core MVC startup product foundation for identifying, organizing, and acting on gaps in a structured workflow. This repository contains the initial MVP solution structure only.
+**An educational diagnostic platform designed to help identify learning gaps and support more targeted learning.**
 
-## Vision
+GapWise is a web application project built with C# and ASP.NET Core MVC. Version 2.0 organises the application into dedicated components for request handling, application services, data transfer, middleware, and supporting resources.
 
-GapWise should become a focused, professional platform that helps users move from unclear gaps to practical next steps with speed, clarity, and confidence.
+This repository contains the application source code, test projects, database-related resources, documentation, and presentation materials.
 
-## MVP Goal
+## Project Demo
 
-The MVP goal is to establish a clean, maintainable .NET 9 web application foundation that can support rapid feature development during a 10-day competition. This foundation intentionally avoids application features, authentication scaffolding, database schema creation, and sample business logic.
+Explore GapWise 2.0 through the project presentation and demonstration video.
+
+- **Animated storyboard:** [View the GapWise storyboard](presentation/GapWise_storyboard_animated.pptx)
+- **Demo video:** [Watch the GapWise demo](presentation/Demo%20run.mp4)<img width="1361" height="716" alt="Test view" src="https://github.com/user-attachments/assets/658c4391-17d3-4dab-9754-75b6b51a1d9b" />
+
+
+## Screenshots
+
+Screenshots of the running application will be added here to showcase its interface and user workflows.
+
+<img width="1365" height="717" alt="Teacher dashboard preview" src="https://github.com/user-attachments/assets/97acc9cf-8935-4716-b7c2-2219a7ae5884" />
+<img width="1365" height="707" alt="Take Diagnostic test View" src="https://github.com/user-attachments/assets/58282169-a4d0-44ea-9e46-96e1711aed61" />
+<img width="1365" height="759" alt="learner dashboard overview" src="https://github.com/user-attachments/assets/5db6bf91-3ddb-4c0b-a0a1-a7447e17270d" />
+<img width="1365" height="723" alt="Diagnostic test results view 1" src="https://github.com/user-attachments/assets/975e9de4-7b08-4b8f-8d45-9831352577f5" />
+<img width="1365" height="717" alt="Create account page" src="https://github.com/user-attachments/assets/c1660d05-5fd1-4def-8c76-892a0b626882" />
+
 
 ## Technology Stack
 
-- .NET 9
-- ASP.NET Core MVC
-- Entity Framework Core with SQL Server, planned but not configured yet
-- ASP.NET Identity, planned but not configured yet
-- SQL Server, planned but no database created yet
-- Bootstrap 5, planned for the web UI
-- AutoMapper, planned for object mapping
-- FluentValidation, planned for input validation
+- **Language:** C#
+- **Framework:** ASP.NET Core MVC
+- **Platform:** .NET 9
+- **Dependency management:** NuGet
+- **Development environment:** Visual Studio
 
-## Folder Structure
+Refer to the project configuration and source code for the dependencies and integrations currently used by the application.
+
+## Application Architecture
+
+The web application uses a modular structure to separate responsibilities across different parts of the codebase.
+
+| Component | Responsibility |
+|---|---|
+| Controllers | Handle incoming application requests |
+| DTOs | Define data structures used to transfer information |
+| Middleware | Supports request-processing behaviour |
+| Interfaces | Define contracts between components |
+| Services | Organise application logic and operations |
+
+These components help make the codebase easier to navigate, maintain, and extend.
+
+## Repository Structure
 
 ```text
-GapWise/
-├── src/
-│   └── GapWise.Web/
-│       ├── Controllers/
-│       ├── Models/
-│       ├── Data/
-│       ├── Services/
-│       ├── Interfaces/
-│       ├── Repositories/
-│       ├── DTOs/
-│       ├── ViewModels/
-│       ├── Helpers/
-│       ├── Extensions/
-│       ├── Mappings/
-│       ├── Middleware/
-│       ├── Views/
-│       └── wwwroot/
-│           ├── css/
-│           ├── js/
-│           ├── images/
-│           └── uploads/
-├── docs/
-├── database/
-├── assets/
-├── presentation/
-├── tests/
-├── .gitignore
-├── README.md
-├── NuGet.Config
-└── GapWise.sln
+GapWise.2.0/
+├── assets/         # Project assets
+├── database/       # Database-related resources
+├── docs/           # Documentation
+├── presentation/   # Project presentation materials
+├── src/            # Application source code
+├── tests/          # Test projects
+├── GapWise.sln     # Visual Studio solution
+├── NuGet.Config    # NuGet configuration
+└── README.md
 ```
 
-## Development Standards
+## Getting Started
 
-- Keep the web project focused on ASP.NET Core MVC responsibilities.
-- Keep `Program.cs` minimal and move future registrations into extension methods.
-- Enable nullable reference types and implicit usings for modern C# defaults.
-- Add packages only when the corresponding capability is actually implemented.
-- Avoid sample business logic, throwaway demo pages, and premature abstractions.
-- Prefer small, testable services and explicit interfaces when features begin.
-- Keep database migrations and schema changes intentional and reviewable.
+### Prerequisites
 
-## Recommended NuGet Packages
+- Visual Studio with the appropriate .NET development workload
+- The .NET SDK required by the solution
+- Any database or external services required by the application
 
-These packages are recommended when their corresponding capabilities are introduced:
+### Open the project
 
-| Purpose | Package |
-| --- | --- |
-| ASP.NET Core MVC | Included through `Microsoft.NET.Sdk.Web` and the shared ASP.NET Core framework |
-| EF Core SQL Server | `Microsoft.EntityFrameworkCore.SqlServer` |
-| EF Core tooling | `Microsoft.EntityFrameworkCore.Tools` |
-| ASP.NET Identity with EF Core | `Microsoft.AspNetCore.Identity.EntityFrameworkCore` |
-| AutoMapper integration | `AutoMapper.Extensions.Microsoft.DependencyInjection` |
-| FluentValidation MVC integration | `FluentValidation.AspNetCore` |
+1. Clone or download this repository.
+2. Open `GapWise.sln` in Visual Studio.
+3. Allow NuGet dependencies to restore.
+4. Build the solution and resolve any environment-specific configuration requirements.
+5. Select the web application as the startup project and run it.
 
-## Build
+Database configuration and other setup requirements should be checked against the current application configuration and project documentation.
 
-```powershell
-dotnet build GapWise.sln --configfile NuGet.Config
-```
+## Project Status
+
+GapWise 2.0 is an ongoing software development project. The repository provides the source code and supporting materials for reviewing its architecture and development work.
+
+Refer to the demonstration video and the current implementation to evaluate the available functionality.
+
+## Future Development
+
+Potential areas for continued development include expanding automated test coverage, refining the user experience, and extending diagnostic reporting capabilities as required.
+
+---
+
+**Repository:** [GapWise.2.0 on GitHub](https://github.com/Thapelo-Mpete-CODES/GapWise.2.0)
