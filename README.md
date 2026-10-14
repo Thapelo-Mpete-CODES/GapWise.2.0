@@ -8,21 +8,37 @@ This repository contains the application source code, test projects, database-re
 
 ## Project Demo
 
-Explore GapWise 2.0 through the project presentation and demonstration video.
+Explore GapWise 2.0 through the project presentation and application walkthrough.
 
-- **Animated storyboard:** [View the GapWise storyboard](presentation/GapWise_storyboard_animated.pptx)
-- **Demo video:** [Watch the GapWise demo](presentation/Demo%20run.mp4)<img width="1361" height="716" alt="Test view" src="https://github.com/user-attachments/assets/658c4391-17d3-4dab-9754-75b6b51a1d9b" />
+- **Animated storyboard:** [View the PowerPoint presentation](presentation/GapWise_storyboard_animated.pptx)
+- **Application walkthrough:** [Watch the GapWise demo video](presentation/Demo%20run.mp4)
 
+## Application Screenshots
 
-## Screenshots
+### Demo View
 
-Screenshots of the running application will be added here to showcase its interface and user workflows.
+![GapWise demo view](https://github.com/user-attachments/assets/658c4391-17d3-4dab-9754-75b6b51a1d9b)
 
-<img width="1365" height="717" alt="Teacher dashboard preview" src="https://github.com/user-attachments/assets/97acc9cf-8935-4716-b7c2-2219a7ae5884" />
-<img width="1365" height="707" alt="Take Diagnostic test View" src="https://github.com/user-attachments/assets/58282169-a4d0-44ea-9e46-96e1711aed61" />
-<img width="1365" height="759" alt="learner dashboard overview" src="https://github.com/user-attachments/assets/5db6bf91-3ddb-4c0b-a0a1-a7447e17270d" />
-<img width="1365" height="723" alt="Diagnostic test results view 1" src="https://github.com/user-attachments/assets/975e9de4-7b08-4b8f-8d45-9831352577f5" />
-<img width="1365" height="717" alt="Create account page" src="https://github.com/user-attachments/assets/c1660d05-5fd1-4def-8c76-892a0b626882" />
+### Teacher Dashboard
+
+![Teacher dashboard](https://github.com/user-attachments/assets/97acc9cf-8935-4716-b7c2-2219a7ae5884)
+
+### Diagnostic Assessment
+
+![Diagnostic assessment screen](https://github.com/user-attachments/assets/58282169-a4d0-44ea-9e46-9831352577f5)
+
+### Learner Dashboard
+
+![Learner dashboard](https://github.com/user-attachments/assets/5db6bf91-3ddb-4c0b-a0a1-a7447e17270d)
+
+### Assessment Results
+
+![Diagnostic test results](https://github.com/user-attachments/assets/975e9de4-7b08-4b8f-8d45-9831352577f5)
+
+### Account Creation
+
+![Account creation screen](https://github.com/user-attachments/assets/c1660d05-5fd1-4def-8c76-892a0b626882)
+
 
 
 ## Technology Stack
