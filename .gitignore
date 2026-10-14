@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.rsuser
+TestResults/
+*.nupkg
+*.snupkg
+artifacts/
+logs/
+*.log
+appsettings.Local.json
+appsettings.*.Local.json
+wwwroot/uploads/*
+!wwwroot/uploads/.gitkeep
